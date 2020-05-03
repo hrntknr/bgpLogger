@@ -1,0 +1,6 @@
+cluster.name: docker-cluster
+network.host: 0.0.0.0
+discovery.type: single-node
+bootstrap.memory_lock: true
+xpack.ilm.enabled: true
+indices.lifecycle.poll_interval: 10s

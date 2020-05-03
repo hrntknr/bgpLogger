@@ -1,0 +1,22 @@
+global:
+  config:
+    as: 65000
+    router-id: "172.30.0.3"
+
+neighbors:
+- config:
+    neighbor-address: "172.30.0.2"
+    peer-as: 65000
+  afi-safis:
+    - config:
+        afi-safi-name: ipv4-unicast
+    - config:
+        afi-safi-name: ipv6-unicast
+- config:
+    neighbor-address: "172.30.0.4"
+    peer-as: 65001
+  afi-safis:
+    - config:
+        afi-safi-name: ipv4-unicast
+    - config:
+        afi-safi-name: ipv6-unicast

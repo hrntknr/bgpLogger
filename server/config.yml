@@ -1,0 +1,6 @@
+listen: "[::]:8080"
+elasticsearch:
+  hosts: ["elasticsearch:9200"]
+  protocol: "http"
+  username: ""
+  password: ""

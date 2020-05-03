@@ -1,0 +1,17 @@
+global:
+  config:
+    as: 2500
+    router-id: "10.0.0.0"
+peer-groups:
+- config:
+    peer-group-name: default
+    peer-as: 2500
+  afi-safis:
+  - config:
+      afi-safi-name: ipv4-unicast
+  - config:
+      afi-safi-name: ipv6-unicast
+dynamic-neighbors:
+- config:
+    prefix: 0.0.0.0/0
+    peer-group: default
